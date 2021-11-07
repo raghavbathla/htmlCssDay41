@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../assets/bridgelabzsolutionssquarelogo.png">
+        <title>
+            CodePen - Demo Flexbox 3
+        </title>
+        <style>
+body{
+    padding: 2em;
+}
+.headerContainer{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: tomato;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+.mainContainer{
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.mainContainerItem{
+    text-align: left;
+    background:deepskyblue;
+}
+article{
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+}
+.footerContainer{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: lightgreen;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+.sideBarLeftItem{
+    background-color: gold;
+}
+.sideBarItem{
+    flex: 1 0 0;
+    border: 0px solid green;
+
+}
+.sideBarRightItem{
+    background-color: hotpink;
+}
+.mainContainerItem{
+    flex : 3 0px;
+}
+
+.sideBarLeftItem{
+    order: 1;
+}
+.mainContainerItem{
+    order: 2;
+}
+.sideBarRightItem{
+    order: 3;
+}
+        </style>
+    
+        </head>
+        <body>
+           
+           <header class="headerContainer"><h1>HEADER - Sample Flexbox Container</h1></header>
+           <div class="mainContainer">
+               
+               <section class="mainContainerItem">
+                <article>
+                   <h2>
+First Article
+                   </h2>
+                   <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare posuere libero, et tempus massa hendrerit ac. Nulla a quam vel velit sollicitudin cursus. Vestibulum hendrerit feugiat odio eu hendrerit. Ut ultrices dapibus semper. Nullam eget pellentesque diam. Mauris ut risus eros. In eu imperdiet urna, a rhoncus metus. Mauris dictum tellus diam, non eleifend justo consequat et. Maecenas tristique et dui vel ultrices.
+                   </p>
+                </article>
+                <article>
+                    <h2>
+ Second Article
+                    </h2>
+                    <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare posuere libero, et tempus massa hendrerit ac. Nulla a quam vel velit sollicitudin cursus. Vestibulum hendrerit feugiat odio eu hendrerit. Ut ultrices dapibus semper. Nullam eget pellentesque diam. Mauris ut risus eros. In eu imperdiet urna, a rhoncus metus. Mauris dictum tellus diam, non eleifend justo consequat et. Maecenas tristique et dui vel ultrices.
+                    </p>
+                 </article>
+                 <article>
+                    <h2>
+ Third Article
+                    </h2>
+                    <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare posuere libero, et tempus massa hendrerit ac. Nulla a quam vel velit sollicitudin cursus. Vestibulum hendrerit feugiat odio eu hendrerit. Ut ultrices dapibus semper. Nullam eget pellentesque diam. Mauris ut risus eros. In eu imperdiet urna, a rhoncus metus. Mauris dictum tellus diam, non eleifend justo consequat et. Maecenas tristique et dui vel ultrices.
+                    </p>
+                 </article>
+               </section>
+               <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+               <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+           </div>
+           <footer class="footerContainer">Footer</footer>
+        </body>
+</html>
